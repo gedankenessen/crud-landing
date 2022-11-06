@@ -3,6 +3,7 @@
   --border-radius: 4px;
   --color-text: white;
   --color-primary: white;
+  --color-secondary: #B7B7B7;
   --color-highlight: #D9A621;
   --color-background: black;
   --color-code-bg: #B7B7B7;
@@ -16,6 +17,14 @@
   --font-md: 16px;
   --font-sm: 14px;
   --font-sx: 12px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 64px;
+
   --min-width: 10px;
   --max-width: 600px;
 

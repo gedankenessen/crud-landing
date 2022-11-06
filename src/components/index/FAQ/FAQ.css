@@ -1,0 +1,7 @@
+@import '../../base.css';
+
+.faq-questions-container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: var(--space-3);
+}
