@@ -1,10 +1,13 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Gedankenessen Template`,
+    description: `Gedankenessen Template Description`,
+    github: `@gedankenessen`,
+    twitter: `@gedankenessen`,
+    author: `gedankenessen`,
+    url: `https://gedankenessen.de`,
+    card: `/card.png`,
+  },
+  pathPrefix: '/',
   plugins: [],
 }
