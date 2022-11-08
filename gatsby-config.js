@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gedankenessen Template`,
-    description: `Gedankenessen Template Description`,
+    title: `crud`,
+    description: `Build your backend from the frontend.`,
     github: `@gedankenessen`,
     twitter: `@gedankenessen`,
     author: `gedankenessen`,
