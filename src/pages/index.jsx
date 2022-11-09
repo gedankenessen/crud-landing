@@ -5,7 +5,7 @@ import { Seo } from '../components/Seo/Seo';
 import { Button } from '../components/Button/Button';
 import { Video } from '../components/index/Video/Video';
 import { Squares } from '../components/index/Squares/Squares';
-import { FAQ } from '../components/index/FAQ/FAQ';
+import { Questions } from '../components/index/FAQ/Questions';
 
 const Index = () => (
   <Layout>
@@ -101,7 +101,7 @@ GET https://crud.io/24259317/users
         description: <p>No need for complicated deploy strategies. Everything is online and ready for you and your team.</p>
       },
     ]} />
-    <FAQ questions={[
+    <Questions questions={[
       { text: 'Learn more about pricing', link: '/pricing' },
       { text: 'Frequently asked questions', link: '/questions' },
       { text: 'On how we treat your data', link: '/privacy' },
