@@ -2,8 +2,12 @@
 
 .squares-container {
   display: flex;
-  flex-direction: row;
-  grid-gap: var(--space-3);
-  max-width: 100%;
-  overflow-x: scroll;
+  flex-wrap: nowrap;
+  grid-gap: var(--space-4);
+  height: 228px;
+  overflow-x: auto;
+}
+
+.squares-item-container {
+  flex: 0 0 auto;
 }

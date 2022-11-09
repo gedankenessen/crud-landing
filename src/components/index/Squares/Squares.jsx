@@ -4,6 +4,10 @@ import './Squares.css';
 
 export const Squares = ({ squares }) => (
   <div className="squares-container">
-    {squares.map((square, key) => <Square key={key} {...square} />)}
+    {squares.map((square, key) =>
+      <div key={key} className="squares-item-container">
+        <Square {...square} />
+      </div>
+    )}
   </div>
 )
