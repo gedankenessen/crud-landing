@@ -3,9 +3,9 @@ import { Link } from 'gatsby';
 import './Question.css';
 
 export const Question = ({ text, link }) => (
-  <Link to={link}>
+  <Link to={link} style={{ textDecoration: 'none' }}>
     <div className="faq-question-container">
-      <h3>{text}</h3>
+      <p className="faq-question-text">{text}</p>
       <hr className="faq-question-line" />
     </div>
   </Link>
