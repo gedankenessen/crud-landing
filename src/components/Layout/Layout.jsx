@@ -6,10 +6,12 @@ import './Layout.css';
 
 export const Layout = ({ children }) => (
   <>
-    <Header />
-    <div className="layout-content">
-      {children}
+    <div className="layout-wrapper">
+      <Header />
+      <div className="layout-content">
+        {children}
+      </div>
+      <Footer />
     </div>
-    <Footer />
   </>
 )
