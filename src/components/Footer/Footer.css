@@ -4,10 +4,14 @@
   display: grid;
   grid-template-areas: "logo access service"
                        "logo interest service";
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
 }
 
 .footer-logo {
   grid-area: logo;
+  height: 64px;
+  width: 64px;
 }
 
 .footer-access-container {
@@ -20,5 +24,13 @@
 
 .footer-service-container {
   grid-area: service;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-text {
+  margin-bottom: var(--space-3);
 }
 
