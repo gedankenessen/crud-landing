@@ -1,14 +1,31 @@
 import React from 'react';
-import Logo from '../../assets/logo-type-b.svg';
+import { HeaderMobile } from './HeaderMobile';
+import { HeaderDesktop } from './HeaderDesktop';
+
 import './Header.css';
 
-export const Header = () => (
-  <header className="header-container">
-    <Logo className="header-logo" alt="Logo" />
-    <div className="burger-menu-container">
-      <span className="burger-menu-item" />
-      <span className="burger-menu-item" />
-      <span className="burger-menu-item" />
+const links = [
+  {
+    title: 'About',
+  },
+  {
+    title: 'Pricing',
+  },
+  {
+    title: 'FAQ',
+  },
+  {
+    title: 'Login',
+  },
+];
+
+export const Header = ({ current }) => (
+  <div className="header-container">
+    <div className="header-mobile">
+      <HeaderMobile current={current} links={links} />
     </div>
-  </header>
+    <div className="header-desktop">
+      <HeaderDesktop current={current} links={links} />
+    </div>
+  </div>
 )

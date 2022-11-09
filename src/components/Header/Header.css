@@ -1,28 +1,18 @@
-@import '../base.css';
-
-.header-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: var(--space-4);
-  margin-bottom: var(--space-4);
+@media only screen and (max-width: 600px) {
+  .header-mobile {
+    display: block;
+  }
+  .header-desktop {
+    display: none;
+  }
 }
 
-.header-logo {
-  height: var(--space-6);
-  width: var(--space-6);
+@media only screen and (min-width: 600px) {
+  .header-mobile {
+    display: none;
+  }
+  .header-desktop {
+    display: block;
+  }
 }
 
-.burger-menu-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  grid-gap: var(--space-2);
-}
-
-.burger-menu-item {
-  width: 42px;
-  height: 4px;
-  background-color: var(--color-highlight);
-}
