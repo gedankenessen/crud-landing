@@ -7,3 +7,10 @@
   grid-gap: var(--space-5);
 }
 
+.stopper {
+  margin-top: 0;
+}
+
+.argument-list-item {
+  margin-left: var(--space-3);
+}

@@ -14,7 +14,7 @@ const Index = () => (
       <Video />
       <div className="arguments-container">
         <div className="argument">
-          <h2>Build <span className="highlight">faster</span></h2>
+          <h2 className="stopper">Build <span className="highlight">faster</span></h2>
           <p>
             Quickly iterate over your types by sending a POST Request to our server.
             Operate over the latest version of your mock data via simple REST methods.
@@ -32,14 +32,14 @@ const Index = () => (
         <div className="argument">
           <h2>And <span className="highlight">more</span> coming soon</h2>
           <ul>
-            <il>Generate OpenId schemas from your prototypes</il>
-            <il>Generate mock-data automatically</il>
+            <li className="argument-list-item">Generate OpenId schemas from your prototypes</li>
+            <li className="argument-list-item">Generate mock-data automatically</li>
           </ul>
         </div>
       </div>
       <Button title="Try CRUD for free" />
       <div className="examples-container">
-        <h2>Example usages</h2>
+        <h2 className="stopper">Example usages</h2>
         <p>Let's create an <span className="highlight">user</span> endpoint by sending the following POST request:</p>
         <pre className="example">
           {`
@@ -83,11 +83,12 @@ GET https://crud.io/24259317/users
   "birthday": "1996-01-01T00:00:00.000Z",
   "lastLogin": "2022-03-15T20:01:22.614Z",
   "id": "42822af8-0d95-42de-aa7f”,
-},]
-        `}
+},]`}
         </pre>
       </div>
-      <Button title="See CRUD in action" />
+      <div className="cta-wrapper">
+        <Button title="See CRUD in action" />
+      </div>
       <Squares squares={[
         {
           title: <h3>Build <span className="highlight">faster</span></h3>,
