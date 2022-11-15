@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import Logo from '../../assets/logo-type-b.svg';
+import { ThemeSwitcher } from '../ThemeSwitcher/ThemeSwitcher';
 import './HeaderDesktop.css';
 
 export const HeaderDesktop = ({ current, links }) => (
@@ -26,6 +27,9 @@ export const HeaderDesktop = ({ current, links }) => (
           </Link>
         )
       }
+      <div className="header-destop-item-inactive">
+        <ThemeSwitcher />
+      </div>
     </div>
   </div>
 )

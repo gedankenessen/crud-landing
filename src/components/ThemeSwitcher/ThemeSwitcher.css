@@ -1,0 +1,28 @@
+@import '../base.css';
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .theme-switch-icon {
+    width: var(--space-5);
+    height: var(--space-5);
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 600px) {
+  .theme-switch-icon {
+    width: var(--space-4);
+    height: var(--space-4);
+  }
+}
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch-button {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}

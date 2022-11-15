@@ -43,18 +43,33 @@
   --breakpoint-desktop: 680px;
 }
 
-/* light theme */
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-text: black;
-    --color-primary: black;
-    --color-secondary: black;
-    --color-highlight: white;
-    --color-off-highlight: #B7B7B7;
-    --color-background: #D9A621;
-    --color-code-bg: #B7B7B7;
-    --color-code: white;
-  }
+
+[data-theme='dark'] {
+  --color-text: white;
+  --color-primary: white;
+  --color-secondary: #D9A621;
+  --color-highlight: #D9A621;
+  --color-off-highlight: #9F6F1F;
+  --color-background: black;
+  --color-code-bg: #B7B7B7;
+  --color-code: white;
+}
+
+[data-theme='light'] {
+  --color-text: black;
+  --color-primary: black;
+  --color-secondary: black;
+  --color-highlight: white;
+  --color-off-highlight: #B7B7B7;
+  --color-background: #D9A621;
+  --color-code-bg: #B7B7B7;
+  --color-code: white;
+}
+
+* {
+  transition-property: color, background-color, fill;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
 }
 
 h1 {
