@@ -15,14 +15,18 @@ export const DEFAULT_THEME = DEFAULT_THEMES[0];
 
 export const ThemeContext = createContext(DEFAULT_THEME);
 export const Theme = ({ children, defaultTheme }) => {
-  const [theme, setRawTheme] = useState(
-    defaultTheme ??
-    JSON.parse(localStorage.getItem('theme')) ??
-    (window.matchMedia && window.matchMedia("(prefers-color-scheme:dark)") ? DEFAULT_THEMES[1] : DEFAULT_THEME)
-  );
+  const [theme, setThemeRaw] = useState(DEFAULT_THEME);
+
+  useEffect(() => {
+    setThemeRaw(
+      defaultTheme ??
+      JSON.parse(localStorage && localStorage.getItem('theme')) ??
+      (window.matchMedia && window.matchMedia("(prefers-color-scheme:dark)") ? DEFAULT_THEMES[1] : DEFAULT_THEME)
+    )
+  }, []);
 
   const setTheme = (theme) => {
-    setRawTheme(theme);
+    setThemeRaw(theme);
     localStorage.setItem('theme', JSON.stringify(theme));
   };
 
