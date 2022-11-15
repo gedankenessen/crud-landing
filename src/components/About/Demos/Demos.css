@@ -1,6 +1,11 @@
 @import '../../base.css';
 
-.demos-wrapper {
+.demos-content {
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: var(--space-5);
+}
+
+.demos-headline {
+  margin-top: 0;
 }

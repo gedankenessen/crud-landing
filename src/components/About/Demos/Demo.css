@@ -1,2 +1,8 @@
 @import '../../base.css';
 
+.demo-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  grid-gap: var(--space-3);
+}
