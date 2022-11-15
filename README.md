@@ -7,6 +7,6 @@
   gedankenessen crud landing page
 </h1>
 
-
-<img align="center" width="640" alt="card" src="https://user-images.githubusercontent.com/24259317/202017966-83501535-4b8a-40cd-ae79-ac5e5f8d1d41.png">
-
+<div align="center" >
+  <img width="640" alt="card" src="https://user-images.githubusercontent.com/24259317/202017966-83501535-4b8a-40cd-ae79-ac5e5f8d1d41.png">
+</div>
