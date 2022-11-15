@@ -30,8 +30,6 @@ const About = () => (
       <div className="cta-container">
         <Button title="See CRUD in action" />
       </div>
-      <div className="squares-container">
-      </div>
       <div className="questions-container">
         <Questions />
       </div>
