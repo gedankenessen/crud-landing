@@ -181,8 +181,25 @@ acronym {
   cursor: help;
 }
 
+
+a::selection,
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+li::selection,
+span::selection,
+pre::selection {
+  background-color: var(--color-highlight);
+}
+
 /* Helper classes */
 
 .highlight {
   color: var(--color-highlight);
+}
+
+.highlight::selection {
+  color: var(--color-background);
 }
