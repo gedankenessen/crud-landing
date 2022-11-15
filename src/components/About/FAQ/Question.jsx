@@ -4,9 +4,9 @@ import './Question.css';
 
 export const Question = ({ text, link }) => (
   <Link to={link} style={{ textDecoration: 'none' }}>
-    <div className="faq-question-container">
-      <p className="faq-question-text">{text}</p>
-      <hr className="faq-question-line" />
+    <div className="question-wrapper">
+      <p className="question-text">{text}</p>
+      <hr className="question-line" />
     </div>
   </Link>
 )

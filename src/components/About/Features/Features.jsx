@@ -30,7 +30,7 @@ const features = [
 ];
 
 export const Features = () => (
-  <div className="features-container">
+  <div className="features-wrapper">
     {features.map((feature, key) => <Feature key={key} {...feature} />)}
   </div>
 )

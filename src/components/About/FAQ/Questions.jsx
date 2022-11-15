@@ -10,7 +10,7 @@ const questions = [
 ];
 
 export const Questions = () => (
-  <div className="faq-questions-container">
+  <div className="questions-wrapper">
     {questions.map((question, key) => <Question key={key} {...question} />)}
   </div>
 )

@@ -14,6 +14,10 @@
                sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
                "Courier New", monospace;
+
+  --font-xu: 64px;
+  --font-xx: 32px;
+  --font-xl: 24px;
   --font-lg: 18px;
   --font-md: 16px;
   --font-sm: 14px;
@@ -25,9 +29,11 @@
   --space-4: 24px;
   --space-5: 32px;
   --space-6: 64px;
+  --space-7: 128px;
+  --space-8: 256px;
 
   --min-width: 10px;
-  --max-width: 600px;
+  --max-width: 1280px;
 
   --line-height-loose: 1.75;
   --line-height-normal: 1.5;
@@ -35,6 +41,18 @@
 
   /* cannot be used in media queries but nice to have as guidence */
   --breakpoint-desktop: 680px;
+}
+
+h1 {
+  font-size: var(--font-xu);
+}
+
+h2 {
+  font-size: var(--font-xx);
+}
+
+h3 {
+  font-size: var(--font-xl);
 }
 
 /* Default HTML elements styling */

@@ -1,7 +1,8 @@
 @import '../../base.css';
 
-.faq-questions-container {
+.questions-wrapper {
   display: flex;
   flex-direction: column;
   grid-gap: var(--space-3);
+  width: 100%;
 }

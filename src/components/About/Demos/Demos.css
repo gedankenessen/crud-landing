@@ -1,0 +1,6 @@
+@import '../../base.css';
+
+.demos-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}

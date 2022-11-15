@@ -3,11 +3,11 @@ import '../../base.css';
 import './Square.css';
 
 export const Square = ({ title, description }) => (
-  <div className="square-container">
-    <div className="square-title-container">
+  <div className="square-wrapper">
+    <div className="square-title-wrapper">
       {title}
     </div>
-    <div className="square-description-container">
+    <div className="square-description-wrapper">
       {description}
     </div>
   </div>

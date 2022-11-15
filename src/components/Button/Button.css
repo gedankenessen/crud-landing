@@ -11,6 +11,12 @@ button.button {
   padding-bottom: var(--space-3);
 }
 
+@media only screen and (min-width: 600px) {
+  button.button {
+    max-width: 296px;
+  }
+}
+
 button.button:active {
   background-color: var(--color-off-highlight);
 }

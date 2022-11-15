@@ -18,11 +18,12 @@ const squares = [
 ];
 
 export const Squares = () => (
-  <div className="squares-container">
-    {squares.map((square, key) =>
-      <div key={key} className="squares-item-container">
-        <Square {...square} />
-      </div>
-    )}
+  <div className="squares-wrapper">
+    {
+      squares.map((square, key) =>
+        <div key={key} className="squares-item-wrapper">
+          <Square {...square} />
+        </div>
+      )}
   </div>
 )

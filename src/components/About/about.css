@@ -1,12 +1,76 @@
 @import '../base.css';
 
-.landing-container {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  grid-gap: var(--space-5);
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .landing-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    grid-gap: var(--space-5);
+  }
 }
 
+/* desktop */
+@media only screen and (min-width: 600px) {
+  .landing-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: var(--space-6);
+    justify-content: center;
+  }
+
+  .headline-container {
+    display: flex;
+    justify-content: flex-start;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .features-container {
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .demos-container {
+    display: flex;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .cta-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .squares-container {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    overflow-x: auto;
+  }
+
+  .questions-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
+
+/* general helper */
 .stopper {
   margin-top: 0;
 }

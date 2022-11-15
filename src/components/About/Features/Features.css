@@ -1,5 +1,25 @@
 @import '../../base.css';
 
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .features-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 600px) {
+  .features-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+.features-wrapper {
+  display: grid;
+  grid-gap: var(--space-5);
+}
+
 .feature-list-item {
   margin-left: var(--space-3);
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Demo } from './Demo';
+import './Demos.css';
 
 const demos = [
   {
@@ -55,14 +56,16 @@ GET https://crud.io/24259317/users
   "id": "42822af8-0d95-42de-aa7f”,
 },]`}
       </pre>
-
     </div>
   }
 
 ];
 
 export const Demos = () => (
-  <div className="demos-container">
-    {demos.map((demo, key) => <Demo key={key} {...demo} />)}
+  <div className="demos-wrapper">
+    <h2 className="demos-headline">Demo</h2>
+    <div className="demos-content">
+      {demos.map((demo, key) => <Demo key={key} {...demo} />)}
+    </div>
   </div>
 )

@@ -1,6 +1,6 @@
 @import '../../base.css';
 
-.video-container {
+.video-wrapper {
   background-color: var(--color-highlight);
   width: 100%;
   height: 100%;

@@ -1,19 +1,19 @@
 @import '../../base.css';
 
-.faq-question-container {
+.question-wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
   grid-gap: var(--space-2);
 }
 
-.faq-question-text {
+.question-text {
   text-decoration: none !important;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.faq-question-line {
+.question-line {
   width: 100%;
   background-color: var(--color-primary);
 }

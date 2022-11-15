@@ -12,19 +12,30 @@ import { Questions } from '../components/About/FAQ/Questions';
 const About = () => (
   <Layout current={'About'}>
     <div className="landing-container">
-      <h1>Build your backend from the <span className="highlight">frontend</span>.</h1>
-      <Video />
-      <Features />
-      <Button title="Try CRUD for free" />
-      <div className="demo-container">
-        <h2 className="stopper">Demo</h2>
+      <div className="headline-container">
+        <h1>Build your backend from the <span className="highlight">frontend</span>.</h1>
+      </div>
+      <div className="video-container">
+        <Video />
+      </div>
+      <div className="features-container">
+        <Features />
+      </div>
+      <div className="cta-container">
+        <Button title="Try CRUD for free" />
+      </div>
+      <div className="demos-container">
         <Demos />
       </div>
-      <div className="cta-wrapper">
+      <div className="cta-container">
         <Button title="See CRUD in action" />
       </div>
-      <Squares />
-      <Questions />
+      <div className="squares-container">
+        <Squares />
+      </div>
+      <div className="questions-container">
+        <Questions />
+      </div>
     </div>
   </Layout>
 )
