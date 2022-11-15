@@ -7,7 +7,7 @@ import { Video } from '../components/index/Video/Video';
 import { Squares } from '../components/index/Squares/Squares';
 import { Questions } from '../components/index/FAQ/Questions';
 
-const Index = () => (
+const About = () => (
   <Layout current={'About'}>
     <div className="landing-container">
       <h1>Build your backend from the <span className="highlight">frontend</span>.</h1>
@@ -115,4 +115,4 @@ GET https://crud.io/24259317/users
 
 export const Head = () => <Seo />;
 
-export default Index;
+export default About;
