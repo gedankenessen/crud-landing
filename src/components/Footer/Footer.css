@@ -32,6 +32,8 @@
   grid-area: logo;
   height: 54px;
   width: 54px;
+  color: var(--color-secondary);
+  fill: currentColor;
 }
 
 .footer-access-container {

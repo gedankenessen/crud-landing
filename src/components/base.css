@@ -3,12 +3,12 @@
   --border-radius: 4px;
   --color-text: white;
   --color-primary: white;
-  --color-secondary: #B7B7B7;
+  --color-secondary: #D9A621;
   --color-highlight: #D9A621;
   --color-off-highlight: #9F6F1F;
   --color-background: black;
   --color-code-bg: #B7B7B7;
-  --color-code: #white;
+  --color-code: white;
   /* TODO: Default to Roboto */
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
                sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -41,6 +41,20 @@
 
   /* cannot be used in media queries but nice to have as guidence */
   --breakpoint-desktop: 680px;
+}
+
+/* light theme */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-text: black;
+    --color-primary: black;
+    --color-secondary: black;
+    --color-highlight: white;
+    --color-off-highlight: #B7B7B7;
+    --color-background: #D9A621;
+    --color-code-bg: #B7B7B7;
+    --color-code: white;
+  }
 }
 
 h1 {
