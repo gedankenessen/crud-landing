@@ -3,11 +3,11 @@ import { useTheme } from '../../hooks/useTheme';
 import './ThemeSwitcher.css';
 
 export const ThemeSwitcher = () => {
-  const { theme, themes, setTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
   return (
     <div className="theme-switch-wrapper">
-      <button className="theme-switch-button" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-        <div className="theme-switch-icon" style={{ backgroundColor: theme === 'light' ? 'black' : '#D9A621' }} />
+      <button className="theme-switch-button" onClick={toggleTheme}>
+        <div className="theme-switch-icon" style={{ backgroundColor: theme.color }} />
       </button>
     </div>
   )
