@@ -151,7 +151,7 @@
 }
 
 .header-mobile-item-active, .header-mobile-item-inactive {
-  font-size: var(--font-md);
+  font-size: var(--font-lg);
   text-decoration: none;
 }
 

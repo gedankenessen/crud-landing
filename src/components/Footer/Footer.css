@@ -10,8 +10,8 @@
 
 .footer-logo {
   grid-area: logo;
-  height: 64px;
-  width: 64px;
+  height: 54px;
+  width: 54px;
 }
 
 .footer-access-container {
