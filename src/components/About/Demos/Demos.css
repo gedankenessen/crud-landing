@@ -1,5 +1,9 @@
 @import '../../base.css';
 
+.demos-wrapper {
+  width: 100%;
+}
+
 .demos-content {
   display: grid;
   grid-template-columns: 1fr;

@@ -43,8 +43,8 @@
   .demos-container {
     display: flex;
     justify-content: center;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
   }
 
   .cta-container {
