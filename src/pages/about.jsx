@@ -1,11 +1,11 @@
 import React from "react"
-import '../components/index/index.css';
+import '../components/About/about.css';
 import { Layout } from '../components/Layout/Layout';
 import { Seo } from '../components/Seo/Seo';
 import { Button } from '../components/Button/Button';
-import { Video } from '../components/index/Video/Video';
-import { Squares } from '../components/index/Squares/Squares';
-import { Questions } from '../components/index/FAQ/Questions';
+import { Video } from '../components/About/Video/Video';
+import { Squares } from '../components/About/Squares/Squares';
+import { Questions } from '../components/About/FAQ/Questions';
 
 const About = () => (
   <Layout current={'About'}>
@@ -39,7 +39,7 @@ const About = () => (
       </div>
       <Button title="Try CRUD for free" />
       <div className="examples-container">
-        <h2 className="stopper">Example usages</h2>
+        <h2 className="stopper">Demo</h2>
         <p>Let's create an <span className="highlight">user</span> endpoint by sending the following POST request:</p>
         <pre className="example">
           {`
