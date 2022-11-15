@@ -9,7 +9,7 @@ module.exports = {
     card: `/card.png`,
     color: `#D9A621`,
   },
-  pathPrefix: '/',
+  pathPrefix: '/crud-landing',
   plugins: [
     `gatsby-plugin-image`,
     {
