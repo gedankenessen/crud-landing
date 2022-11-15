@@ -1,11 +1,31 @@
 @import '../base.css';
 
-.footer-container {
-  display: grid;
-  grid-template-areas: "logo access service"
-                       "logo interest service";
-  padding-top: var(--space-6);
-  padding-bottom: var(--space-6);
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    grid-template-areas: "logo access service"
+                         "logo interest service";
+  }
+
+  .footer-container {
+    display: grid;
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-6);
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 600px) {
+  .footer-container {
+    grid-template-areas: "logo access interest service"
+                         "logo access interest service";
+  }
+
+  .footer-container {
+    display: grid;
+    padding-top: var(--space-7);
+    padding-bottom: var(--space-7);
+  }
 }
 
 .footer-logo {
