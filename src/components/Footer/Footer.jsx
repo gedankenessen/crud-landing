@@ -5,7 +5,9 @@ import './Footer.css';
 
 export const Footer = () => (
   <footer className="footer-container">
-    <Logo className="footer-logo" />
+    <Link to='/'>
+      <Logo className="footer-logo" />
+    </Link>
     <div className="footer-access-container">
       <Link to='/login' className="footer-link"><p className="footer-text">Login</p></Link>
       <Link to='/login' className="footer-link"><p className="footer-text">Register</p></Link>
