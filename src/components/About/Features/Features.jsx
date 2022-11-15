@@ -16,7 +16,7 @@ const features = [
     description: <p>Don’t implement twice by instead getting your data from a backend right from the start.</p>,
   },
   {
-    title: <h2><span className="highlight">Share</span> your progress easiyl</h2>,
+    title: <h2><span className="highlight">Share</span> your progress easily</h2>,
     description: <p>No need for complicated deploy strategies. Everything is online and ready for you and your team.</p>,
 
   },
