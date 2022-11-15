@@ -196,7 +196,9 @@ ol {
 }
 pre {
   margin: 0;
-  padding: var(--font-md);
+  padding-left: var(--font-md);
+  padding-right: var(--font-md);
+  padding-bottom: var(--font-md);
   font-size: 0.875rem;
   line-height: var(--line-height-normal);
   background: var(--color-code-bg);
