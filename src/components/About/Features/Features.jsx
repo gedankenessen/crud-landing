@@ -4,7 +4,7 @@ import './Features.css';
 
 const features = [
   {
-    title: <h2 className="stopper">Build <span className="highlight">faster</span></h2>,
+    title: <h2>Build <span className="highlight">faster</span></h2>,
     description: <p>
       Quickly iterate over your types by sending a POST Request to our server.
       Operate over the latest version of your mock data via simple REST methods.
