@@ -22,13 +22,13 @@
 }
 
 .header-desktop-item-active {
-  font-size: 16px;
+  font-size: var(--font-md);
   text-decoration: none;
   font-weight: 800;
 }
 
 .header-desktop-item-inactive {
-  font-size: 16px;
+  font-size: var(--font-md);
   text-decoration: none;
 }
 
