@@ -8,7 +8,7 @@ import { Squares } from '../components/index/Squares/Squares';
 import { Questions } from '../components/index/FAQ/Questions';
 
 const Index = () => (
-  <Layout>
+  <Layout current={'About'}>
     <div className="landing-container">
       <h1>Build your backend from the <span className="highlight">frontend</span>.</h1>
       <Video />

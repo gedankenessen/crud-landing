@@ -16,7 +16,7 @@ export const HeaderDesktop = ({ current, links }) => (
           <Link
             key={key}
             className={
-              current === (item?.key ?? item?.title.toLowerCase())
+              current?.toLowerCase() === item?.title?.toLowerCase()
                 ? 'header-desktop-item-active'
                 : 'header-desktop-item-inactive'
             }

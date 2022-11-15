@@ -32,3 +32,10 @@
   text-decoration: none;
 }
 
+.header-desktop-item-active:hover {
+  text-decoration: underline;
+}
+
+.header-desktop-item-inactive:hover {
+  text-decoration: underline;
+}

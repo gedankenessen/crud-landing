@@ -4,10 +4,10 @@ import { Footer } from '../Footer/Footer';
 import '../base.css';
 import './Layout.css';
 
-export const Layout = ({ children }) => (
+export const Layout = ({ current, children }) => (
   <>
     <div className="layout-wrapper">
-      <Header />
+      <Header current={current} />
       <div className="layout-content">
         {children}
       </div>

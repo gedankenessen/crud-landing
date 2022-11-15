@@ -21,7 +21,7 @@ export const HeaderMobile = ({ current, links }) => (
             <Link
               key={key}
               className={
-                current === (item?.key ?? item?.title.toLowerCase())
+                current?.toLowerCase() === item?.title?.toLowerCase()
                   ? 'header-mobile-item-active'
                   : 'header-mobile-item-inactive'
               }
