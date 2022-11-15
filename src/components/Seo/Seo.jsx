@@ -27,6 +27,7 @@ export const Seo = ({ children, ...props }) => {
   return (
     <>
       <title>{title}</title>
+      <meta name="robots" content="noindex" />
       <meta name="description" content={description} />
       <meta name="image" content={`${url}${card}`} />
       <meta property="og:title" content={title} />
