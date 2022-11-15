@@ -240,7 +240,6 @@ acronym {
   cursor: help;
 }
 
-
 a::selection,
 p::selection,
 h1::selection,
@@ -258,4 +257,8 @@ pre::selection {
 
 .highlight {
   color: var(--color-highlight);
+}
+
+.normal-text {
+  text-align: start;
 }

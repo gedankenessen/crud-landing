@@ -31,7 +31,6 @@ const About = () => (
         <Button title="See CRUD in action" />
       </div>
       <div className="squares-container">
-        <Squares />
       </div>
       <div className="questions-container">
         <Questions />
