@@ -6,7 +6,6 @@ import { Button } from '../components/Button/Button';
 import { Video } from '../components/About/Video/Video';
 import { Features } from '../components/About/Features/Features';
 import { Demos } from '../components/About/Demos/Demos';
-import { Squares } from '../components/About/Squares/Squares';
 import { Questions } from '../components/About/FAQ/Questions';
 
 const About = () => (
