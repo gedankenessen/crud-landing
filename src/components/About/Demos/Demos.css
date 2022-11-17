@@ -6,7 +6,7 @@
 
 .demos-content {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
   grid-gap: var(--space-5);
 }
 

@@ -219,9 +219,7 @@ dt,
 th {
   font-weight: bold;
 }
-p {
-  max-width: 680px;
-}
+
 code {
   font-size: 0.875rem;
 }
