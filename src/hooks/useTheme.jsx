@@ -23,7 +23,7 @@ export const Theme = ({ children, defaultTheme }) => {
       JSON.parse(localStorage && localStorage.getItem('theme')) ??
       (window.matchMedia && window.matchMedia("(prefers-color-scheme:dark)") ? DEFAULT_THEMES[1] : DEFAULT_THEME)
     )
-  }, []);
+  }, [defaultTheme]);
 
   const setTheme = (theme) => {
     setThemeRaw(theme);
