@@ -1,6 +1,6 @@
 {
   "name": "gatsby-starter-hello-world",
-  "website": "gedankenessen.github.io/crud-landing",
+  "website": "https://crud.gedankenessen.de",
   "private": true,
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",

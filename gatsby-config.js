@@ -5,11 +5,11 @@ module.exports = {
     github: `@gedankenessen`,
     twitter: `@gedankenessen`,
     author: `gedankenessen`,
-    url: `https://gedankenessen.de`,
+    url: `https://crud.gedankenessen.de`,
     card: `/card.png`,
     color: `#D9A621`,
   },
-  pathPrefix: '/crud-landing',
+  pathPrefix: '/',
   plugins: [
     `gatsby-plugin-image`,
     {
