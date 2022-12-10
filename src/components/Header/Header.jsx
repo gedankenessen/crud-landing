@@ -12,7 +12,7 @@ const links = [
     title: 'Pricing',
   },
   {
-    title: 'FAQ',
+    title: 'Wiki',
   },
   {
     title: 'Login',
