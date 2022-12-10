@@ -3,15 +3,15 @@ import { Link } from "gatsby";
 import './BreadCrumps.css';
 
 export const BreadCrumps = ({ crumps = [] }) => (
-  <div className="crumps-container">
+  <div className="crumps-wrapper">
     {
       /* Show at least `/` if crumps is empty */
       (crumps.length > 0)
         ? crumps.map(({ crump, link }, index) =>
-          <>
-            <p key={`${index}/chain`} className="crumps-chain">/</p>
-            <Link key={`${index}/crump`} className="crumps-link" to={link}>{crump}</Link>
-          </>
+          <div key={index} className="crumps-container">
+            <p className="crumps-chain">/</p>
+            <Link className="crumps-link" to={link}>{crump}</Link>
+          </div>
         )
         : <p className="crumps-chain">/</p>
     }

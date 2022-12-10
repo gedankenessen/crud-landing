@@ -1,6 +1,6 @@
 @import '../base.css';
 
-.crumps-container {
+.crumps-wrapper, .crumps-container {
   display: flex;
   flex-direction: row;
   grid-gap: var(--space-2);
