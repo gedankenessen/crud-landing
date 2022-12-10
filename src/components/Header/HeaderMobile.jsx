@@ -27,7 +27,7 @@ export const HeaderMobile = ({ current, links }) => (
                   : 'header-mobile-item-inactive'
               }
               target={item?.asNewTab ? '_blank' : '_self'}
-              to={item?.link ?? `/${item?.title.toLowerCase()}/`}>
+              to={item?.link ?? `/${item?.title.toLowerCase()}`}>
               {item?.title}
             </Link>
           )
