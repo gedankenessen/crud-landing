@@ -13,13 +13,17 @@
   color: var(--color-secondary);
 }
 
+.wiki-index-container h2 a {
+  text-decoration: none;
+}
+
 /* desktop */
 @media only screen and (min-width: 600px) {
 
   .wiki-index-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 96px 1fr 96px 1fr 96px 1fr;
     grid-template-areas: "hl1 hl2"
                          "tx1 tx2"
                          "hl3 hl4"
@@ -27,6 +31,10 @@
                          "hl5 hl6"
                          "tx5 tx6";
     justify-content: space-between;
+  }
+
+  .wiki-index-container ul {
+    margin-bottom: var(--space-3);
   }
 
   .wiki-index-container h2:nth-of-type(1){
@@ -76,5 +84,4 @@
   .wiki-index-container ul:nth-of-type(6){
     grid-area: tx6;
   }
-
 }
