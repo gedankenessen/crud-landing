@@ -223,6 +223,11 @@ th {
   font-weight: bold;
 }
 
+th, td {
+  padding-left: 0;
+  padding-right: var(--space-4);
+}
+
 code {
   font-size: 0.875rem;
 }
