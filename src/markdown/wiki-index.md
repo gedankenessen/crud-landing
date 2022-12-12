@@ -15,6 +15,7 @@ description: ""
 - [Compose](wiki/installation#docker-compose)
 - [Docker](wiki/installation#docker)
 - [Git](wiki/installation#git)
+- [Customizing](wiki/installation#customizing)
 - [Whats next](wiki/installation#next)
 
 ## [First steps](wiki/first-steps)

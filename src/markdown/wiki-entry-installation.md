@@ -7,7 +7,7 @@ description: ""
 
 <h2 id="about">About</h2>
 
-crud can be self-hosted in multiple ways. The recommended way is via Docker Compose, as that includes a MongoDB. It is also possible to run crud through Docker and to provide your own MongoDB.
+crud can be self-hosted in multiple ways. The recommended way is via Docker Compose, as that includes a MongoDB. It is also possible to run crud through Docker and to provide your own MongoDB. Lastly, you can also just clone the [crud repo](https://github.com/gedankenessen/crud) and run the Clojure code directly.
 
 <h2 id="docker-compose">Docker Compose</h2>
 
@@ -48,36 +48,15 @@ You should now have two services running, a) a `mongo` service and b) a `crud` s
 
 You can also run just the Dockerimage and provide your own MongoDB (v6.0 preferred):
 
+<br/>
+
 ```shell
 docker run gedankenessen/crud:0.0.1
 ```
 
-<h3 id="customizing">Customizing</h3>
-
-By default crud will assume your MongoDB is present on `localhost:27017`. crud also assumes a `root` user with the password `example` to be present on the database.
-You can adjust all that by passing the following command args:
-
 <br/>
 
-| Comand         | Default        |
-|----------------|----------------|
-| `--mongo-url`  | `localhost`    |
-| `--mongo-port` | `27017`        |
-| `--mongo-user` | `root`         |
-| `--mongo-pw`   | `example`      |
-| `--mongo-db`   | `crud-testing` |
-
-<br/>
-
-Likewise, the settings can also be changed by setting the following environment variables:
-
-<br/>
-
-- `CRUD_MONGO_URL`
-- `CRUD_MONGO_PORT`
-- `CRUD_MONGO_USER`
-- `CRUD_MONGO_PW`
-- `CRUD_MONGO_DB`
+crud expects your MongoDB to be located at `localhost:27017` and have a default user of `root:example`. Checkout [the customizing](#customizing) to learn how to change those values.
 
 <h2 id="git">Git</h2>
 
@@ -101,10 +80,25 @@ The following steps should get `crud` up and running:
 That should start crud for you on `localhost:3004`. Check out [the customizing](#customizing) section to correctly configure crud to work with your MongoDB.
 
 
+<h2 id="customizing">Customizing</h2>
+
+By default crud will assume a MongoDB to be present on `localhost:27017`. crud also assumes a user with the name `root` with the password `example` to be present on the database.
+You can adjust all that by either using environment variables (e.g [docker run]((https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file))) or passing in different command line arguments (e.g `lein run`).
+
+<br/>
+
+| Environment Variable | Command Line Argument | Default        |
+|----------------------|-----------------------|----------------|
+| `CRUD_MONGO_URL`     | `--mongo-url`         | `localhost`    |
+| `CRUD_MONGO_PORT`    | `--mongo-port`        | `27017`        |
+| `CRUD_MONGO_USER`    | `--mongo-user`        | `root`         |
+| `CRUD_MONGO_PW`      | `--mongo-pw`          | `example`      |
+| `CRUD_MONGO_DB`      | `--mongo-db`          | `crud-testing` |
+
 <h2 id="next">Whats next</h2>
 
 
-With crud setup you can checkout the [first steps](wiki/first-steps) section and make your first queries.
+With crud setup you can checkout the [first steps](../first-steps) section and make your first queries.
 
 <br/>
 <br/>
