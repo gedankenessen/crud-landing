@@ -202,11 +202,14 @@ ol {
   list-style-position: outside;
   list-style-image: none;
 }
+
+li {
+  margin-left: var(--space-5);
+}
+
 pre {
   margin: 0;
-  padding-left: var(--font-md);
-  padding-right: var(--font-md);
-  padding-bottom: var(--font-md);
+  padding: var(--font-md);
   font-size: 0.875rem;
   line-height: var(--line-height-normal);
   background: var(--color-code-bg);
