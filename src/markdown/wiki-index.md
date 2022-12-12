@@ -6,15 +6,16 @@ description: ""
 ---
 
 ## [What is crud?](wiki/what)
+- [Why crud?](wiki/what#why)
 - [Purpose](wiki/what#purpose)
 - [Limits](wiki/what#limits)
 
 ## [Installation](wiki/installation)
 - [About](wiki/installation#about)
-- [Docker Compose](wiki/installation#docker-compose)
+- [Compose](wiki/installation#docker-compose)
 - [Docker](wiki/installation#docker)
-- [JAR](wiki/installation#jar)
 - [Git](wiki/installation#git)
+- [Whats next](wiki/installation#next)
 
 ## [First steps](wiki/first-steps)
 - [Obtaining a token](wiki/first-steps#token)
