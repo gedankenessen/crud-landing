@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-index-jsx-a522a3a0163022a7aca8.js","mappings":"2KAKA,UAFc,WAAH,OAAS,gBAAC,UAAK,KAAI,C","sources":["webpack://gatsby-starter-hello-world/./src/pages/index.jsx"],"sourcesContent":["import React from \"react\"\nimport About from './about';\n\nconst Index = () => <About />;\n\nexport default Index;\n"],"names":[],"sourceRoot":""}
