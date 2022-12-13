@@ -1,7 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
 import Logo from '../../assets/logo-type-b.svg';
-import { ThemeSwitcher } from '../ThemeSwitcher/ThemeSwitcher';
 import './HeaderMobile.css';
 
 export const HeaderMobile = ({ current, links }) => (
@@ -33,9 +32,6 @@ export const HeaderMobile = ({ current, links }) => (
             </Link>
           )
         }
-        <div className="header-mobile-item-inactive">
-          <ThemeSwitcher />
-        </div>
         <hr className="header-mobile-burger-divider" />
         <p className="header-mobile-burger-subline">team@gedankenessen.de</p>
       </div>
