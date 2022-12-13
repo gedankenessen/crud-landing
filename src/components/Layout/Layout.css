@@ -8,8 +8,6 @@
   margin: auto;
 }
 
-
-
 @media (prefers-reduced-motion: no-preference) {
   .layout-content>*, .animated {
     animation-duration: 0.5s;
