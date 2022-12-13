@@ -1,7 +1,7 @@
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
-  // Wiki section
+  // Start wiki-index
   const wikiIndexTemplate = require.resolve(`./src/templates/wiki-index.jsx`)
 
   const wikiIndex = graphql(`
@@ -36,7 +36,7 @@ exports.createPages = ({ actions, graphql }) => {
     })
   });
 
-
+  // Start wiki-entry
   const wikiEntryTemplate = require.resolve(`./src/templates/wiki-entry.jsx`)
 
   const wikiEntry = graphql(`
@@ -69,5 +69,42 @@ exports.createPages = ({ actions, graphql }) => {
     })
   });
 
-  return Promise.all([wikiEntry, wikiIndex]);
+  // Start blog-entry
+
+  // Start wiki-entry
+  const blogEntryTemplate = require.resolve(`./src/templates/blog-entry.jsx`)
+
+  const blogEntry = graphql(`
+    {
+      allMarkdownRemark(
+        filter: {frontmatter:{ type: {eq: "blog-entry"}}}
+      ) {
+        edges {
+          node {
+            id
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `).then(result => {
+    if (result.errors) {
+      return Promise.reject(result.errors)
+    }
+    return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      return createPage({
+        path: `blog/${node.frontmatter.slug}`,
+        component: blogEntryTemplate,
+        context: {
+          id: node.id,
+        },
+      })
+    })
+  });
+
+
+  // Combining all
+  return Promise.all([wikiEntry, wikiIndex, blogEntry]);
 }

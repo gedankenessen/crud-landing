@@ -1,0 +1,6 @@
+@import "../base.css";
+
+.blog-entry-date {
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-5);
+}

@@ -1,0 +1,17 @@
+@import "../base.css";
+
+.blog-index-entries {
+  margin-top: var(--space-6);
+}
+
+.blog-index-entry-link {
+  text-decoration: none;
+}
+
+.blog-index-entry-headline {
+  margin-bottom: var(--space-2);
+}
+
+.blog-index-entry-date {
+  margin-bottom: var(--space-2);
+}
