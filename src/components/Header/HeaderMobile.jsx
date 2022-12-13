@@ -33,7 +33,11 @@ export const HeaderMobile = ({ current, links }) => (
           )
         }
         <hr className="header-mobile-burger-divider" />
-        <p className="header-mobile-burger-subline">team@gedankenessen.de</p>
+        <p className="header-mobile-burger-subline">
+          <Link to="mailto:team@gedankenessen.de" style={{ textDecoration: 'none' }}>
+            team@gedankenessen.de
+          </Link>
+        </p>
       </div>
     </div>
   </div>
