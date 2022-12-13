@@ -1,6 +1,6 @@
 # crud-landing - Landing page for [crud](www.github.com/gedankenessen/crud)
 
-Uses gatsby with vanilla JS and pure css. Hosted via [github pages](https://pages.github.com/). Available at [crud.gedankenessen.de](www.crud.gedankenessen.de)
+Uses gatsby with vanilla JS and pure css. Hosted via [github pages](https://pages.github.com/). Available at [crud.gedankenessen.de](https://crud.gedankenessen.de)
 
 <div align="center" >
   <a href="https://crud.gedankenessen.de">
@@ -26,7 +26,7 @@ npm i
 
 ### Running locally
 
-The following provides a hot-reloading page on [localhost:8000](localhost:8000).
+The following provides a hot-reloading page on [localhost:8000](http://localhost:8000).
 
 ```shell
 npm run develop
@@ -34,7 +34,7 @@ npm run develop
 
 ### Deploying
 
-Gatbsy and gh-pages are so configered that the following command automatically builds and publishes to [crud.gedankenessen.de](www.crud.gedankenessen.de).
+Gatbsy and gh-pages are so configered that the following command automatically builds and publishes to [crud.gedankenessen.de](https://crud.gedankenessen.de).
 
 ```shell
 npm run deploy
