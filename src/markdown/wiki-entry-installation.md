@@ -87,13 +87,19 @@ You can adjust all that by either using environment variables (e.g [docker run](
 
 <br/>
 
-| Environment Variable | Command Line Argument | Default        |
-|----------------------|-----------------------|----------------|
-| `CRUD_MONGO_URL`     | `--mongo-url`         | `localhost`    |
-| `CRUD_MONGO_PORT`    | `--mongo-port`        | `27017`        |
-| `CRUD_MONGO_USER`    | `--mongo-user`        | `root`         |
-| `CRUD_MONGO_PW`      | `--mongo-pw`          | `example`      |
-| `CRUD_MONGO_DB`      | `--mongo-db`          | `crud-testing` |
+| Environment Variable     | Command Line Argument  | Default        |
+|--------------------------|------------------------|----------------|
+| `CRUD_MONGO_URL`         | `--mongo-url`          | `localhost`    |
+| `CRUD_MONGO_PORT`        | `--mongo-port`         | `27017`        |
+| `CRUD_MONGO_USER`        | `--mongo-user`         | `root`         |
+| `CRUD_MONGO_PW`          | `--mongo-pw`           | `example`      |
+| `CRUD_MONGO_DB`          | `--mongo-db`           | `crud-testing` |
+| `CRUD_MONGO_SHOULD_AUTH` | `--crud-should-auth`   | `false`        |
+| `CRUD_MONGO_AUTH_DB`     | `--crud-auth-db`       | `admin`        |
+| `CRUD_PORT`              | `--crud-port`          | `3004`         |
+| `CRUD_ENV`               | `--crud-env`           | `prod`         |
+| `CRUD_TOKEN_SECRET`      | `--crud-token-secret`  | `secret`       |
+| `CRUD_TOKEN_VERSION`     | `--crud-token-version` | `0`            |
 
 <h2 id="next">Whats next</h2>
 
@@ -103,4 +109,4 @@ With crud setup you can checkout the [first steps](../first-steps) section and m
 <br/>
 <br/>
 
-_Last Edited: 2020.12.12; crud:v0.0.1_
+_Last Edited: 2020.12.13; crud:v0.0.2_
