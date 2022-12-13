@@ -8,7 +8,7 @@ export default function Template({ data }) {
   const { markdownRemark } = data ?? {}
   const { frontmatter, html } = markdownRemark ?? {};
   return (
-    <Layout>
+    <Layout current="wiki">
       <h1 className="wiki-entry-title">{frontmatter?.title}</h1>
       <BreadCrumps crumps={[
         { crump: 'wiki', link: '/wiki' },

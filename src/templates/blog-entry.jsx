@@ -9,7 +9,7 @@ export default function Template({ data }) {
   const { markdownRemark } = data ?? {}
   const { frontmatter, html } = markdownRemark ?? {};
   return (
-    <Layout>
+    <Layout current="blog">
       <h1 className="blog-entry-title">{frontmatter?.title}</h1>
       <BreadCrumps crumps={[
         { crump: 'blog', link: '/blog' },

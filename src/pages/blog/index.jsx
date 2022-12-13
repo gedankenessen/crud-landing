@@ -17,9 +17,8 @@ export const BlogEntry = ({ title, date, description, slug }) => (
 
 export default function Template({ data }) {
   const entries = data?.allMarkdownRemark?.edges;
-  console.log({ data });
   return (
-    <Layout>
+    <Layout current="blog">
       <h1 className="blog-index-title">Blog</h1>
       <BreadCrumps crumps={[{ crump: 'blog', link: '/blog' },]} />
       <div className="blog-index-entries">
