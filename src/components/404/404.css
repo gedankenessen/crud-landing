@@ -1,0 +1,11 @@
+@import "../base.css";
+
+.not-found-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
