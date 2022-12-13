@@ -4,6 +4,22 @@
   background-color: var(--color-secondary);
 }
 
+.video-placeholder-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.video-placeholder-container {
+}
+
+.video-placeholder-text {
+  color: var(--color-highlight);
+  font-size: 44px;
+  opacity: 5%;
+}
+
 /* mobile */
 @media only screen and (max-width: 600px) {
   .video-wrapper {
