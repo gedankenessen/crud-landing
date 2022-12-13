@@ -208,8 +208,8 @@ li {
 }
 
 pre {
-  margin: 0;
-  padding: var(--font-md);
+  margin: var(--space-2);
+  padding: var(--space-2);
   font-size: 0.875rem;
   line-height: var(--line-height-normal);
   background: var(--color-code-bg);
