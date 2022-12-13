@@ -1,4 +1,5 @@
 import React from "react"
+import { navigate } from 'gatsby';
 import '../components/About/about.css';
 import { Layout } from '../components/Layout/Layout';
 import { Seo } from '../components/Seo/Seo';
@@ -22,13 +23,13 @@ const About = () => (
         <Features />
       </div>
       <div className="cta-container">
-        <Button title="Try CRUD for free" />
+        <Button title="Try CRUD for free" onClick={() => navigate('/wiki/installation')} />
       </div>
       <div className="demos-container">
         <Demos />
       </div>
       <div className="cta-container">
-        <Button title="See CRUD in action" />
+        <Button title="See CRUD in action" onClick={() => navigate('/wiki/first-steps')} />
       </div>
       <div className="questions-container">
         <Questions />
