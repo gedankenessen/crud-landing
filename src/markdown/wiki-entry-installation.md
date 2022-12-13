@@ -83,7 +83,7 @@ That should start crud for you on `localhost:3004`. Check out [the customizing](
 <h2 id="customizing">Customizing</h2>
 
 By default crud will assume a MongoDB to be present on `localhost:27017`. crud also assumes a user with the name `root` with the password `example` to be present on the database.
-You can adjust all that by either using environment variables (e.g [docker run]((https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file))) or passing in different command line arguments (e.g `lein run`).
+You can adjust all that by either using environment variables (e.g [docker run -- -e]((https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file)), [docker-compose](https://docs.docker.com/compose/environment-variables/)) or passing in different command line arguments (e.g `lein run`).
 
 <br/>
 
