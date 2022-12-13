@@ -8,7 +8,7 @@ const demos = [
     code: <pre className="demo">
       {
         `
-POST https://crud.io/24259317/users
+POST https://crud.gedankenessen.de/users
 {
   "name": "tom",
   "theme": "dark",
@@ -18,7 +18,7 @@ POST https://crud.io/24259317/users
     </pre>
   },
   {
-    text: <p>CRUD will create the following <span className="highlight">endpoint</span> for us, that we can now access:</p>,
+    text: <p>crud will create the following <span className="highlight">endpoint</span> for us, that we can now access:</p>,
     code: <pre className="demo">
       {
         `
@@ -32,11 +32,11 @@ DELETE {id}`
     </pre>
   },
   {
-    text: <p>If we change our data model CRUD <span className="highlight">automatically</span> cleans our database:</p>,
+    text: <p>If we change our data model crud <span className="highlight">automatically</span> cleans our database:</p>,
     code: <div>
       <pre className="demo">
         {`
-POST https://crud.io/24259317/users
+POST https://crud.gedankenessen.de/users
 {
   "name": "jenna",
   "theme": "light",
@@ -47,7 +47,7 @@ POST https://crud.io/24259317/users
       </pre>
       <pre className="demo">
         {`
-GET https://crud.io/24259317/users
+GET https://crud.gedankenessen.de/users
 [{
   "name": "jenna",
   "theme": "light",

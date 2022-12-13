@@ -23,13 +23,13 @@ const About = () => (
         <Features />
       </div>
       <div className="cta-container">
-        <Button title="Try CRUD for free" onClick={() => navigate('/wiki/installation')} />
+        <Button title="Try crud for free" onClick={() => navigate('/wiki/installation')} />
       </div>
       <div className="demos-container">
         <Demos />
       </div>
       <div className="cta-container">
-        <Button title="See CRUD in action" onClick={() => navigate('/wiki/first-steps')} />
+        <Button title="See crud in action" onClick={() => navigate('/wiki/first-steps')} />
       </div>
       <div className="questions-container">
         <Questions />

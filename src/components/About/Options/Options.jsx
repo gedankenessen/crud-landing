@@ -8,7 +8,7 @@ const options = [{
   link: '/wiki/installation'
 },
 {
-  headline: 'Crud-As-A-Service',
+  headline: 'crud-as-a-service',
   subline: 'Coming Soon',
   disabled: true,
 }];
