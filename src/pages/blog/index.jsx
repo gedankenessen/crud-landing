@@ -5,7 +5,7 @@ import { Seo } from '../../components/Seo/Seo';
 import { BreadCrumps } from '../../components/BreadCrumps/BreadCrumps';
 import '../../components/Blog/blog-index.css';
 
-export const BlogEntry = ({ title, date, description, slug }) => (
+const BlogEntry = ({ title, date, description, slug }) => (
   <Link to={`/blog/${slug}`} className="blog-index-entry-link">
     <div className="blog-index-entry-container">
       <h3 className="blog-index-entry-headline">{title}</h3>
