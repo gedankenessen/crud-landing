@@ -9,10 +9,6 @@
   margin-left: var(--space-4);
 }
 
-.wiki-index-container a {
-  color: var(--color-secondary);
-}
-
 .wiki-index-container h2 a {
   text-decoration: none;
 }
