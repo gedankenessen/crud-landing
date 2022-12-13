@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-index-jsx-8a59a9e4da74d00b0cd7.js","mappings":"+IAKA,UAFc,WAAH,OAAS,gBAAC,UAAK,KAAI,C","sources":["webpack://crud-landing/./src/pages/index.jsx"],"sourcesContent":["import React from \"react\"\nimport About from './about';\n\nconst Index = () => <About />;\n\nexport default Index;\n"],"names":[],"sourceRoot":""}
