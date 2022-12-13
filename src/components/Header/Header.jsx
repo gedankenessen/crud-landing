@@ -9,13 +9,15 @@ const links = [
     title: 'About',
   },
   {
-    title: 'Pricing',
-  },
-  {
     title: 'Wiki',
   },
   {
-    title: 'Login',
+    title: 'Blog',
+  },
+  {
+    title: 'Github',
+    link: 'https://github.com/gedankenessen/crud',
+    asNewTab: true,
   },
 ];
 

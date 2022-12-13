@@ -3,9 +3,9 @@ import { Question } from './Question';
 import './Questions.css';
 
 const questions = [
-  { text: 'Learn more about pricing', link: '/pricing' },
-  { text: 'Frequently asked questions', link: '/questions' },
-  { text: 'On how we treat your data', link: '/privacy' },
+  { text: 'What can crud do?', link: '/wiki/what' },
+  { text: 'How do install crud?', link: '/wiki/installation' },
+  { text: 'What does the API offer?', link: '/wiki/api' },
   { text: 'Check out our blog', link: '/blog' },
 ];
 

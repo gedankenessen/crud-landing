@@ -52,6 +52,10 @@
   text-decoration: none;
 }
 
+.footer-link-ext {
+  text-decoration: underline;
+}
+
 .footer-text {
   margin-bottom: var(--space-3);
 }

@@ -9,19 +9,20 @@ export const Footer = () => (
       <Logo className="footer-logo" />
     </Link>
     <div className="footer-access-container">
-      <Link to='/login' className="footer-link"><p className="footer-text">Login</p></Link>
-      <Link to='/register' className="footer-link"><p className="footer-text">Register</p></Link>
+      <Link to='/wiki/what#why' className="footer-link"><p className="footer-text">Why crud?</p></Link>
+      <Link to='/wiki/first-steps' className="footer-link"><p className="footer-text">Getting started</p></Link>
+      <Link to='/wiki/installation' className="footer-link"><p className="footer-text">Installation</p></Link>
     </div>
     <div className="footer-interest-container">
-      <Link to='/pricing' className="footer-link"><p className="footer-text">Pricing</p></Link>
-      <Link to='/features' className="footer-link"><p className="footer-text">Features</p></Link>
-      <Link to='/faq' className="footer-link"><p className="footer-text">FAQ</p></Link>
+      <Link to='/wiki' className="footer-link"><p className="footer-text">Wiki</p></Link>
+      <Link to='/blog' className="footer-link"><p className="footer-text">Blog</p></Link>
     </div>
     <div className="footer-service-container">
-      <Link to='/blog' className="footer-link"><p className="footer-text">Blog</p></Link>
-      <Link to='/privacy' className="footer-link"><p className="footer-text">Privacy</p></Link>
-      <Link to='/terms' className="footer-link"><p className="footer-text">Terms</p></Link>
       <Link to='/contact' className="footer-link"><p className="footer-text">Contact</p></Link>
+      <Link to='www.github.com/gedankenessen/crud' target='_blank' className="footer-link-ext"><p className="footer-text">Github</p></Link>
+      <Link to='https://hub.docker.com/r/gedankenessen/crud' target='_blank' className="footer-link-ext"><p className="footer-text">Dockerhub</p></Link>
     </div>
   </footer>
 )
+
+
