@@ -18,6 +18,8 @@ This is a very basic gatsby project under the hood, created with the [gatsby-sta
 
 ### Installation
 
+Clone the repo and run:
+
 ```shell
 npm i
 ```
