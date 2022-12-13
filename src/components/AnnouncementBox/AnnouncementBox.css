@@ -1,0 +1,50 @@
+@import '../base.css';
+
+.announcement-box-wrapper {
+  text-decoration: none;
+}
+
+.announcement-box-container-disabled,
+.announcement-box-container
+{
+  display: grid;
+  width: var(--space-8);
+  height: var(--space-8);
+  grid-template-rows: 1fr 48px;
+  grid-template-areas: "headline"
+                       "subline";
+  padding: var(--space-4);
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--color-primary);
+}
+
+.announcement-box-container-disabled {
+  opacity: 25%;
+  cursor:not-allowed;
+  user-select: none;
+}
+
+.announcement-box-headline-container {
+  grid-area: headline;
+}
+
+.announcement-box-headline {
+  font-size: 44px;
+  text-decoration: none;
+}
+
+.announcement-box-subline-container {
+  display: grid;
+  grid-area: subline;
+  align-items: center;
+  background-color: var(--color-primary);
+  padding: var(--space-2);
+}
+
+.announcement-box-subline {
+  font-size: var(--font-lg);
+  color: var(--color-off-highlight);
+}
+
+

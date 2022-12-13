@@ -7,6 +7,7 @@ import { Video } from '../components/About/Video/Video';
 import { Features } from '../components/About/Features/Features';
 import { Demos } from '../components/About/Demos/Demos';
 import { Questions } from '../components/About/FAQ/Questions';
+import { Options } from '../components/About/Options/Options';
 
 const About = () => (
   <Layout current={'About'}>
@@ -31,6 +32,9 @@ const About = () => (
       </div>
       <div className="questions-container">
         <Questions />
+      </div>
+      <div className="options-container">
+        <Options />
       </div>
     </div>
   </Layout>
