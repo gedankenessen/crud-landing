@@ -32,7 +32,7 @@ services:
     ports:
       - '27017:27017'
   crud:
-    image: 'gedankenessen/crud:0.0.1'
+    image: 'gedankenessen/crud:1.0.0'
     restart: 'always'
     ports:
       - '3004:3004'
@@ -51,7 +51,7 @@ You can also run just the Dockerimage and provide your own MongoDB (v6.0 preferr
 <br/>
 
 ```shell
-docker run gedankenessen/crud:0.0.1
+docker run gedankenessen/crud:1.0.0
 ```
 
 <br/>
@@ -109,4 +109,4 @@ With crud setup you can checkout the [first steps](../first-steps) section and m
 <br/>
 <br/>
 
-_Last Edited: 2020.12.13; crud:v0.0.2_
+_Last Edited: 2020.12.14; crud:v1.0.0_
