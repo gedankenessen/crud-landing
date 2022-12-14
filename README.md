@@ -1,4 +1,4 @@
-# crud-landing - Landing page for [crud](www.github.com/gedankenessen/crud)
+# crud-landing - Landing page for [crud](https://www.github.com/gedankenessen/crud)
 
 Uses gatsby with vanilla JS and pure css. Hosted via [github pages](https://pages.github.com/). Available at [crud.gedankenessen.de](https://crud.gedankenessen.de)
 
