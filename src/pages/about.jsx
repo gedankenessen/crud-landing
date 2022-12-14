@@ -14,7 +14,7 @@ const About = () => (
   <Layout current={'About'}>
     <div className="landing-container layout-content">
       <div className="headline-container">
-        <h1>Prototype your <span className="highlight">backend</span> with your <span className="highlight">frontend</span>.</h1>
+        <h1>Prototype your <span className="highlight">frontend</span> with your <span className="highlight">backend</span>.</h1>
       </div>
       <div className="video-container">
         <Video />
