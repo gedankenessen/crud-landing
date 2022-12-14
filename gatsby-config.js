@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `crud`,
-    description: `Prototype your frontend from the backend.`,
+    description: `Prototype your frontend with your backend.`,
     github: `@gedankenessen`,
     twitter: `@gedankenessen`,
     author: `gedankenessen`,
