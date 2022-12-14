@@ -40,5 +40,7 @@ description: ""
 ## [Architecture](/wiki/architecture)
 - [Stack](/wiki/architecture#stack)
 - [Deployment](/wiki/architecture#deployment)
-- [Database](/wiki/architecture#db)
+- [Contributing](/wiki/architecture#contributing)
+- [Namespaces](/wiki/architecture#namepsaces)
+- [Data and errors](/wiki/architecture#data-and-errors)
 
