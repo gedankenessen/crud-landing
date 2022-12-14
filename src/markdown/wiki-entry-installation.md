@@ -104,7 +104,7 @@ You can adjust all that by either using environment variables (e.g [docker run -
 <h2 id="next">Whats next</h2>
 
 
-With crud setup you can checkout the [first steps](../first-steps) section and make your first queries.
+With crud setup you can checkout the [first steps](/wiki/first-steps) section and make your first queries.
 
 <br/>
 <br/>
