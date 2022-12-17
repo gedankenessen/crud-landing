@@ -6,7 +6,8 @@ description: ""
 ---
 
 ## [What is crud?](/wiki/what)
-- [Why crud?](/wiki/what#why)
+- [What?](/wiki/what#what)
+- [Why?](/wiki/what#why)
 - [Purpose](/wiki/what#purpose)
 - [Limits](/wiki/what#limits)
 
