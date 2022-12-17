@@ -6,14 +6,17 @@ const features = [
   {
     title: <h2>Build <span className="highlight">faster</span></h2>,
     description: <p>
-      Quickly iterate over your types by sending a POST Request to our server.
-      Operate over the latest version of your mock data via simple REST methods.
-      Validate ideas in hours - instead of days.
+      Easily create a full CRUD endpoint by POSTing your JSON to crud.
+      Query, add, delete and iterate your data - all by using HTTP methods.
+      crud takes of the CRUD and enables you to validate ideas in hours - instead of days
     </p>,
   },
   {
     title: <h2>Don't mock data, <span className="highlight">prototype</span> it</h2>,
-    description: <p>Don’t implement twice by instead getting your data from a backend right from the start.</p>,
+    description: <p>
+      Don’t implement twice by instead getting your data from a backend right from the start.
+      No need to add state transition wiring after the fact - design with it in mind.
+    </p>,
   },
   {
     title: <h2><span className="highlight">Share</span> your progress easily</h2>,
@@ -23,7 +26,7 @@ const features = [
   {
     title: <h2>And <span className="highlight">more</span> coming soon</h2>,
     description: <ul className="feature-list">
-      <li className="feature-list-item">Generate OpenId schemas from your prototypes</li>
+      <li className="feature-list-item">Generate OpenAPI schemas from your prototypes</li>
       <li className="feature-list-item">Generate mock-data automatically</li>
     </ul>
   }
