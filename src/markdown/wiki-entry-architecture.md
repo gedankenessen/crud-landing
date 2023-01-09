@@ -11,7 +11,8 @@ crud is written in [Clojure](https://clojure.org/), a functional and dynamically
 
 <br/>
 
-To persist the data crud connects to a MongoDB. Its relationship with JSON made it a good fit as crud users are sending over their data as JSON. Its hands-off approach to data structure is also something that fits great with what crud is trying to provide.
+To persist the data crud connects to a MongoDB. Its hands-off approach to the structuring of data made it a great fit with what crud is trying to provide.
+Besides MongoDB, there is also a [second implementation](https://github.com/gedankenessen/crud/tree/main/src/crud/persistence/local "Github") of the persistence layer which uses [Clojure Atoms](https://clojure.org/reference/atoms) to store data in-memory.
 
 <br/>
 
@@ -19,12 +20,7 @@ Clojure being a JVM hosted language opens up a lot of options when it comes to h
 
 <h2 id="deployment">Deployment</h2>
 
-Currently there are many different ways to [deploy crud](/wiki/installation). With [Docker Compose](/wiki/installation#compose) being the recommended way to self-host, as crud relies on a MongoDB to persist data.
-
-<br/>
-
-Other persistence options could open crud up to different types of deploys. For one, there is a [Clojure atom](https://clojure.org/reference/atoms) based implementation of the persistence layer in the works, that would kill the requirement for
-database (at least where persistence is not a concern). Without a database, a self-contained JAR or just the already provided Dockerimage could suffice.
+Currently there are many different ways to [deploy crud](/wiki/installation). With [Docker](/wiki/installation#docker) being the recommended way to self-host, as it's the quickest.
 
 <br/>
 
@@ -71,3 +67,8 @@ To take advantage of Clojure's nil-pruning and the REPL-driven development every
 <br/>
 
 [This blog post](https://marlonschlosshauer.de/blog/handling-errors-clojure-api) talks more about the `[data error]` tuple.
+
+<br/>
+<br/>
+
+_Last Edited: 2023.01.09; crud:1.2.0_
