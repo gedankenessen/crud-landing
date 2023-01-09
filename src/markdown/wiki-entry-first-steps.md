@@ -15,7 +15,7 @@ In this section were going to look at how to use crud. If you haven't installed 
 crud works by receiving `JSON` through a POST on an `endpoint` with the name of your choice.
 
 ```
-POST crud.gedankenessen.de/build/products
+POST 127.0.0.1:3004/build/products
 {
   "name": "Keyboard",
   "color": "Silver",
@@ -30,7 +30,7 @@ It'll then attach that `endpoint` to your account (which is identified by the to
 crud needs a token inside of the header of your requests to identify you. To obtain that token you first need to create an account.
 
 ```
-POST crud.gedankenessen.de/user/register
+POST 127.0.0.1:3004/user/register
 {
   "email": "foo@bar",
   "password": "******"
@@ -41,7 +41,7 @@ If you get a `OK 200` as a response you can collect your token by sending the sa
 
 
 ```
-POST crud.gedankenessen.de/user/login
+POST 127.0.0.1:3004/user/login
 {
   "email": "foo@bar",
   "password": "******"
@@ -63,7 +63,7 @@ Stick that token in your header under `Authorization` and you're good to go.
 Having collected and stored our token, we can now use crud to handle our data:
 
 ```
-POST crud.gedankenessen.de/build/products
+POST 127.0.0.1:3004/build/products
 {
   "name": "Keyboard",
   "color": "Silver",
@@ -78,7 +78,7 @@ The above request adds a `/products` endpoint with an object containing the keys
 After our `POST` request we can access all basic CRUD methods on our new `/products` endpoint.
 
 ```
-GET crud.gedankenessen.de/build/products
+GET 127.0.0.1:3004/build/products
 [{
   "name": "Keyboard",
   "color": "Silver",
@@ -91,7 +91,7 @@ GET crud.gedankenessen.de/build/products
 crud also generates a unique `_id` for our item, which we can use to find it again:
 
 ```
-GET crud.gedankenessen.de/build/products/6392357a6a845062bbc40597
+GET 127.0.0.1:3004/build/products/6392357a6a845062bbc40597
 {
   "name": "Keyboard",
   "color": "Silver",
@@ -103,7 +103,7 @@ GET crud.gedankenessen.de/build/products/6392357a6a845062bbc40597
 
 Or to update it:
 ```
-PUT crud.gedankenessen.de/build/products/6392357a6a845062bbc40597
+PUT 127.0.0.1:3004/build/products/6392357a6a845062bbc40597
 {
   "name": "Keyboard",
   "color": "Dark Grey",
@@ -119,7 +119,7 @@ During development the structure of our data might change. To improve developmen
 For instance, if we add a field documenting the dimensions of our product and `POST` it to `/products`:
 
 ```
-POST crud.gedankenessen.de/build/products
+POST 127.0.0.1:3004/build/products
 {
   "name": "Table",
   "color": "Brown",
@@ -131,7 +131,7 @@ POST crud.gedankenessen.de/build/products
 crud will automatically clean up the previous entries:
 
 ```
-GET crud.gedankenessen.de/build/products
+GET 127.0.0.1:3004/build/products
 [{
   "name": "Table",
   "color": "Brown",

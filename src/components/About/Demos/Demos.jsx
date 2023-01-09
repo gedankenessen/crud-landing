@@ -8,7 +8,7 @@ const demos = [
     code: <pre className="demo">
       {
         `
-POST https://crud.gedankenessen.de/build/users
+POST 127.0.0.1:3004/build/users
 {
   "name": "tom",
   "theme": "dark",
@@ -36,7 +36,7 @@ DELETE {id}`
     code: <div>
       <pre className="demo">
         {`
-POST https://crud.gedankenessen.de/build/users
+POST 127.0.0.1:3004/build/users
 {
   "name": "jenna",
   "theme": "light",
@@ -47,7 +47,7 @@ POST https://crud.gedankenessen.de/build/users
       </pre>
       <pre className="demo">
         {`
-GET https://crud.gedankenessen.de/build/users
+GET 127.0.0.1:3004/build/users
 [{
   "name": "jenna",
   "theme": "light",

@@ -18,7 +18,7 @@ When using `POST` to add data, crud will check if a change to the structure occu
 So if we first `POST` an item to `/products`
 
 ```
-POST crud.gedankenessen.de/build/products
+POST 127.0.0.1:3004/build/products
 {
   "name": "Keyboard",
   "color": "Silver",
@@ -29,7 +29,7 @@ POST crud.gedankenessen.de/build/products
 And then change that item:
 
 ```
-PUT crud.gedankenessen.de/build/products
+PUT 127.0.0.1:3004/build/products
 {
   "name": "Keyboard",
   "color": "Grey",
@@ -50,7 +50,7 @@ If you know of a field that will be relevant later but you don't have the data f
 So if we run both of these one after another:
 
 ```
-POST crud.gedankenessen.de/build/products
+POST 127.0.0.1:3004/build/products
 {
   "name": "Keyboard",
   "color": "Silver",
@@ -60,7 +60,7 @@ POST crud.gedankenessen.de/build/products
 
 
 ```
-POST crud.gedankenessen.de/build/products
+POST 127.0.0.1:3004/build/products
 {
   "name": "Table",
   "color": "Brown",
@@ -71,7 +71,7 @@ POST crud.gedankenessen.de/build/products
 A `GET` will give us both:
 
 ```
-GET crud.gedankenessen.de/build/products
+GET 127.0.0.1:3004/build/products
 [
   {
     "name": "Keyboard",
@@ -93,7 +93,7 @@ GET crud.gedankenessen.de/build/products
 To minimize headaches `GET` on undefined or unknown endpoints always return `[]`. So if we have never done a `POST` on `/tables`, the following will just return `[]`:
 
 ```
-GET crud.gedankenessen.de/build/tables
+GET 127.0.0.1:3004/build/tables
 []
 ```
 
