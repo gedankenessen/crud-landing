@@ -4,7 +4,7 @@
 <p>When using <code>POST</code> to add data, crud will check if a change to the structure occured. To allow you to play with your data, crud will not check the structure if you do a <code>PUT</code> on an item.</p>
 <br/>
 <p>So if we first <code>POST</code> an item to <code>/products</code></p>
-<pre><code>POST crud.gedankenessen.de/build/products
+<pre><code>POST 127.0.0.1:3004/build/products
 {
   "name": "Keyboard",
   "color": "Silver",
@@ -12,7 +12,7 @@
 }
 </code></pre>
 <p>And then change that item:</p>
-<pre><code>PUT crud.gedankenessen.de/build/products
+<pre><code>PUT 127.0.0.1:3004/build/products
 {
   "name": "Keyboard",
   "color": "Grey",
@@ -25,14 +25,14 @@
 <h2>null is treated as a wildcard</h2>
 <p>If you know of a field that will be relevant later but you don't have the data for it yet, you can specify it as <code>null</code> in your <code>POST</code>. This will tell crud not to wipe the database if the field later appears with actual data inside.</p>
 <p>So if we run both of these one after another:</p>
-<pre><code>POST crud.gedankenessen.de/build/products
+<pre><code>POST 127.0.0.1:3004/build/products
 {
   "name": "Keyboard",
   "color": "Silver",
   "material": null
 }
 </code></pre>
-<pre><code>POST crud.gedankenessen.de/build/products
+<pre><code>POST 127.0.0.1:3004/build/products
 {
   "name": "Table",
   "color": "Brown",
@@ -40,7 +40,7 @@
 }
 </code></pre>
 <p>A <code>GET</code> will give us both:</p>
-<pre><code>GET crud.gedankenessen.de/build/products
+<pre><code>GET 127.0.0.1:3004/build/products
 [
   {
     "name": "Keyboard",
@@ -58,10 +58,10 @@
 </code></pre>
 <h2>Unknown endpoints always return []</h2>
 <p>To minimize headaches <code>GET</code> on undefined or unknown endpoints always return <code>[]</code>. So if we have never done a <code>POST</code> on <code>/tables</code>, the following will just return <code>[]</code>:</p>
-<pre><code>GET crud.gedankenessen.de/build/tables
+<pre><code>GET 127.0.0.1:3004/build/tables
 []
 </code></pre>
 <p>This is done so that you don't encounter <code>404</code> errors if you choose to start out by building an overview component (e.g. summary of available tables) first. That way you can build the component that does the <code>POST</code> and defines the structure of your items (e.g. interactive table configurator), later.</p>
 <br/>
 <br/>
-<p><em>Last edited: 2022.12.14; crud:1.1.0</em></p></div></div><footer class="footer-container"><a href="/"><svg class="footer-logo" width="84" height="84" viewBox="0 0 84 84" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H84V84H0V0ZM21 6.99997H63.2V21H77.2V35V35.2V49.2H63.2V63.2H21V49.2H7.00003L6.99998 35.2V21H21V6.99997ZM49.2 49H63V35.2H49.2V49ZM21.2 49H35V35.2H21.2V49ZM35.2 35V21.2H49V35H35.2Z" fill="currentColor"></path></svg></a><div class="footer-access-container"><a class="footer-link" href="/wiki/what#why"><p class="footer-text">Why crud?</p></a><a class="footer-link" href="/wiki/first-steps"><p class="footer-text">Getting started</p></a><a class="footer-link" href="/wiki/installation"><p class="footer-text">Installation</p></a></div><div class="footer-interest-container"><a class="footer-link" href="/wiki"><p class="footer-text">Wiki</p></a><a class="footer-link" href="/blog"><p class="footer-text">Blog</p></a></div><div class="footer-service-container"><a class="footer-link" href="/contact"><p class="footer-text">Contact</p></a><a target="_blank" class="footer-link-ext" href="/wiki/edgecases/www.github.com/gedankenessen/crud"><p class="footer-text">Github</p></a><a href="https://hub.docker.com/r/gedankenessen/crud" target="_blank" class="footer-link-ext"><p class="footer-text">Dockerhub</p></a></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/wiki/edgecases";window.___webpackCompilationHash="957417711e98ea679791";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-be088af892f9cd68ae00.js"],"app":["/app-12b5b4f8e145bae54f51.js"],"component---src-pages-404-js":["/component---src-pages-404-js-54c76cd886b33cd4a1b2.js"],"component---src-pages-about-jsx":[],"component---src-pages-blog-index-jsx":["/component---src-pages-blog-index-jsx-4a6c5f2cc2355ad50495.js"],"component---src-pages-contact-jsx":["/component---src-pages-contact-jsx-9d04764a80d6d2e8bc07.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx-8a59a9e4da74d00b0cd7.js"],"component---src-templates-blog-entry-jsx":["/component---src-templates-blog-entry-jsx-535dd1e327866ca35cfe.js"],"component---src-templates-wiki-entry-jsx":["/component---src-templates-wiki-entry-jsx-09960981ba7bcc83903b.js"],"component---src-templates-wiki-index-jsx":["/component---src-templates-wiki-index-jsx-9536d1546fcca0dc8f6c.js"]};/*]]>*/</script><script src="/polyfill-be088af892f9cd68ae00.js" nomodule=""></script><script src="/app-12b5b4f8e145bae54f51.js" async=""></script><script src="/framework-5163495ab766ea1431c2.js" async=""></script><script src="/webpack-runtime-7a65372fd6fa294cb790.js" async=""></script></body></html>
+<p><em>Last edited: 2022.12.14; crud:1.1.0</em></p></div></div><footer class="footer-container"><a href="/"><svg class="footer-logo" width="84" height="84" viewBox="0 0 84 84" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H84V84H0V0ZM21 6.99997H63.2V21H77.2V35V35.2V49.2H63.2V63.2H21V49.2H7.00003L6.99998 35.2V21H21V6.99997ZM49.2 49H63V35.2H49.2V49ZM21.2 49H35V35.2H21.2V49ZM35.2 35V21.2H49V35H35.2Z" fill="currentColor"></path></svg></a><div class="footer-access-container"><a class="footer-link" href="/wiki/what#why"><p class="footer-text">Why crud?</p></a><a class="footer-link" href="/wiki/first-steps"><p class="footer-text">Getting started</p></a><a class="footer-link" href="/wiki/installation"><p class="footer-text">Installation</p></a></div><div class="footer-interest-container"><a class="footer-link" href="/wiki"><p class="footer-text">Wiki</p></a><a class="footer-link" href="/blog"><p class="footer-text">Blog</p></a></div><div class="footer-service-container"><a class="footer-link" href="/contact"><p class="footer-text">Contact</p></a><a target="_blank" class="footer-link-ext" href="/wiki/edgecases/www.github.com/gedankenessen/crud"><p class="footer-text">Github</p></a><a href="https://hub.docker.com/r/gedankenessen/crud" target="_blank" class="footer-link-ext"><p class="footer-text">Dockerhub</p></a></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/wiki/edgecases";window.___webpackCompilationHash="afedec58387b207ddbae";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-be088af892f9cd68ae00.js"],"app":["/app-12b5b4f8e145bae54f51.js"],"component---src-pages-404-js":["/component---src-pages-404-js-54c76cd886b33cd4a1b2.js"],"component---src-pages-about-jsx":[],"component---src-pages-blog-index-jsx":["/component---src-pages-blog-index-jsx-4a6c5f2cc2355ad50495.js"],"component---src-pages-contact-jsx":["/component---src-pages-contact-jsx-9d04764a80d6d2e8bc07.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx-8a59a9e4da74d00b0cd7.js"],"component---src-templates-blog-entry-jsx":["/component---src-templates-blog-entry-jsx-535dd1e327866ca35cfe.js"],"component---src-templates-wiki-entry-jsx":["/component---src-templates-wiki-entry-jsx-09960981ba7bcc83903b.js"],"component---src-templates-wiki-index-jsx":["/component---src-templates-wiki-index-jsx-9536d1546fcca0dc8f6c.js"]};/*]]>*/</script><script src="/polyfill-be088af892f9cd68ae00.js" nomodule=""></script><script src="/app-12b5b4f8e145bae54f51.js" async=""></script><script src="/framework-5163495ab766ea1431c2.js" async=""></script><script src="/webpack-runtime-f05cf5b5a47a62f1c084.js" async=""></script></body></html>

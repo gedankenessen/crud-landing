@@ -3,7 +3,7 @@
 <p>In this section were going to look at how to use crud. If you haven't installed crud yet, checkout the <a href="/wiki/installation">Installation</a> section.</p>
 <h2 id="basics">The basics</h2>
 <p>crud works by receiving <code>JSON</code> through a POST on an <code>endpoint</code> with the name of your choice.</p>
-<pre><code>POST crud.gedankenessen.de/build/products
+<pre><code>POST 127.0.0.1:3004/build/products
 {
   "name": "Keyboard",
   "color": "Silver",
@@ -13,14 +13,14 @@
 <p>It'll then attach that <code>endpoint</code> to your account (which is identified by the token that you supply in the header).</p>
 <h2 id="token">Obtaining a token</h2>
 <p>crud needs a token inside of the header of your requests to identify you. To obtain that token you first need to create an account.</p>
-<pre><code>POST crud.gedankenessen.de/user/register
+<pre><code>POST 127.0.0.1:3004/user/register
 {
   "email": "foo@bar",
   "password": "******"
 }
 </code></pre>
 <p>If you get a <code>OK 200</code> as a response you can collect your token by sending the same <code>email</code> and <code>password</code> to <code>/login</code>:</p>
-<pre><code>POST crud.gedankenessen.de/user/login
+<pre><code>POST 127.0.0.1:3004/user/login
 {
   "email": "foo@bar",
   "password": "******"
@@ -34,7 +34,7 @@
 <p>Stick that token in your header under <code>Authorization</code> and you're good to go.</p>
 <h2 id="creating">Creating your first endpoint</h2>
 <p>Having collected and stored our token, we can now use crud to handle our data:</p>
-<pre><code>POST crud.gedankenessen.de/build/products
+<pre><code>POST 127.0.0.1:3004/build/products
 {
   "name": "Keyboard",
   "color": "Silver",
@@ -44,7 +44,7 @@
 <p>The above request adds a <code>/products</code> endpoint with an object containing the keys <code>name</code>, <code>color</code>, <code>material</code>. It's important to note that the <code>/build</code> path needs to be prefixed to our desired endpoint. This is so crud related endpoints don't cause a naming conflict (see the <a href="/wiki/api">API</a> section for more).</p>
 <h2 id="querying">Querying data</h2>
 <p>After our <code>POST</code> request we can access all basic CRUD methods on our new <code>/products</code> endpoint.</p>
-<pre><code>GET crud.gedankenessen.de/build/products
+<pre><code>GET 127.0.0.1:3004/build/products
 [{
   "name": "Keyboard",
   "color": "Silver",
@@ -54,7 +54,7 @@
 }]
 </code></pre>
 <p>crud also generates a unique <code>_id</code> for our item, which we can use to find it again:</p>
-<pre><code>GET crud.gedankenessen.de/build/products/6392357a6a845062bbc40597
+<pre><code>GET 127.0.0.1:3004/build/products/6392357a6a845062bbc40597
 {
   "name": "Keyboard",
   "color": "Silver",
@@ -64,7 +64,7 @@
 }
 </code></pre>
 <p>Or to update it:</p>
-<pre><code>PUT crud.gedankenessen.de/build/products/6392357a6a845062bbc40597
+<pre><code>PUT 127.0.0.1:3004/build/products/6392357a6a845062bbc40597
 {
   "name": "Keyboard",
   "color": "Dark Grey",
@@ -75,7 +75,7 @@
 <h2 id="changing">Changing structure</h2>
 <p>During development the structure of our data might change. To improve development velocity crud will flush the database if it detects a change in structure.</p>
 <p>For instance, if we add a field documenting the dimensions of our product and <code>POST</code> it to <code>/products</code>:</p>
-<pre><code>POST crud.gedankenessen.de/build/products
+<pre><code>POST 127.0.0.1:3004/build/products
 {
   "name": "Table",
   "color": "Brown",
@@ -84,7 +84,7 @@
 }
 </code></pre>
 <p>crud will automatically clean up the previous entries:</p>
-<pre><code>GET crud.gedankenessen.de/build/products
+<pre><code>GET 127.0.0.1:3004/build/products
 [{
   "name": "Table",
   "color": "Brown",
@@ -99,4 +99,4 @@
 Additionally you can learn more about some of cruds edgecases in the <a href="/wiki/edgecases">Edgecases</a> section.</p>
 <br/>
 <br/>
-<p><em>Last Edited: 2022.12.14; crud:1.1.0</em></p></div></div><footer class="footer-container"><a href="/"><svg class="footer-logo" width="84" height="84" viewBox="0 0 84 84" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H84V84H0V0ZM21 6.99997H63.2V21H77.2V35V35.2V49.2H63.2V63.2H21V49.2H7.00003L6.99998 35.2V21H21V6.99997ZM49.2 49H63V35.2H49.2V49ZM21.2 49H35V35.2H21.2V49ZM35.2 35V21.2H49V35H35.2Z" fill="currentColor"></path></svg></a><div class="footer-access-container"><a class="footer-link" href="/wiki/what#why"><p class="footer-text">Why crud?</p></a><a aria-current="page" class="footer-link" href="/wiki/first-steps"><p class="footer-text">Getting started</p></a><a class="footer-link" href="/wiki/installation"><p class="footer-text">Installation</p></a></div><div class="footer-interest-container"><a class="footer-link" href="/wiki"><p class="footer-text">Wiki</p></a><a class="footer-link" href="/blog"><p class="footer-text">Blog</p></a></div><div class="footer-service-container"><a class="footer-link" href="/contact"><p class="footer-text">Contact</p></a><a target="_blank" class="footer-link-ext" href="/wiki/first-steps/www.github.com/gedankenessen/crud"><p class="footer-text">Github</p></a><a href="https://hub.docker.com/r/gedankenessen/crud" target="_blank" class="footer-link-ext"><p class="footer-text">Dockerhub</p></a></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/wiki/first-steps";window.___webpackCompilationHash="957417711e98ea679791";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-be088af892f9cd68ae00.js"],"app":["/app-12b5b4f8e145bae54f51.js"],"component---src-pages-404-js":["/component---src-pages-404-js-54c76cd886b33cd4a1b2.js"],"component---src-pages-about-jsx":[],"component---src-pages-blog-index-jsx":["/component---src-pages-blog-index-jsx-4a6c5f2cc2355ad50495.js"],"component---src-pages-contact-jsx":["/component---src-pages-contact-jsx-9d04764a80d6d2e8bc07.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx-8a59a9e4da74d00b0cd7.js"],"component---src-templates-blog-entry-jsx":["/component---src-templates-blog-entry-jsx-535dd1e327866ca35cfe.js"],"component---src-templates-wiki-entry-jsx":["/component---src-templates-wiki-entry-jsx-09960981ba7bcc83903b.js"],"component---src-templates-wiki-index-jsx":["/component---src-templates-wiki-index-jsx-9536d1546fcca0dc8f6c.js"]};/*]]>*/</script><script src="/polyfill-be088af892f9cd68ae00.js" nomodule=""></script><script src="/app-12b5b4f8e145bae54f51.js" async=""></script><script src="/framework-5163495ab766ea1431c2.js" async=""></script><script src="/webpack-runtime-7a65372fd6fa294cb790.js" async=""></script></body></html>
+<p><em>Last Edited: 2022.12.14; crud:1.1.0</em></p></div></div><footer class="footer-container"><a href="/"><svg class="footer-logo" width="84" height="84" viewBox="0 0 84 84" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H84V84H0V0ZM21 6.99997H63.2V21H77.2V35V35.2V49.2H63.2V63.2H21V49.2H7.00003L6.99998 35.2V21H21V6.99997ZM49.2 49H63V35.2H49.2V49ZM21.2 49H35V35.2H21.2V49ZM35.2 35V21.2H49V35H35.2Z" fill="currentColor"></path></svg></a><div class="footer-access-container"><a class="footer-link" href="/wiki/what#why"><p class="footer-text">Why crud?</p></a><a aria-current="page" class="footer-link" href="/wiki/first-steps"><p class="footer-text">Getting started</p></a><a class="footer-link" href="/wiki/installation"><p class="footer-text">Installation</p></a></div><div class="footer-interest-container"><a class="footer-link" href="/wiki"><p class="footer-text">Wiki</p></a><a class="footer-link" href="/blog"><p class="footer-text">Blog</p></a></div><div class="footer-service-container"><a class="footer-link" href="/contact"><p class="footer-text">Contact</p></a><a target="_blank" class="footer-link-ext" href="/wiki/first-steps/www.github.com/gedankenessen/crud"><p class="footer-text">Github</p></a><a href="https://hub.docker.com/r/gedankenessen/crud" target="_blank" class="footer-link-ext"><p class="footer-text">Dockerhub</p></a></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/wiki/first-steps";window.___webpackCompilationHash="afedec58387b207ddbae";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-be088af892f9cd68ae00.js"],"app":["/app-12b5b4f8e145bae54f51.js"],"component---src-pages-404-js":["/component---src-pages-404-js-54c76cd886b33cd4a1b2.js"],"component---src-pages-about-jsx":[],"component---src-pages-blog-index-jsx":["/component---src-pages-blog-index-jsx-4a6c5f2cc2355ad50495.js"],"component---src-pages-contact-jsx":["/component---src-pages-contact-jsx-9d04764a80d6d2e8bc07.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx-8a59a9e4da74d00b0cd7.js"],"component---src-templates-blog-entry-jsx":["/component---src-templates-blog-entry-jsx-535dd1e327866ca35cfe.js"],"component---src-templates-wiki-entry-jsx":["/component---src-templates-wiki-entry-jsx-09960981ba7bcc83903b.js"],"component---src-templates-wiki-index-jsx":["/component---src-templates-wiki-index-jsx-9536d1546fcca0dc8f6c.js"]};/*]]>*/</script><script src="/polyfill-be088af892f9cd68ae00.js" nomodule=""></script><script src="/app-12b5b4f8e145bae54f51.js" async=""></script><script src="/framework-5163495ab766ea1431c2.js" async=""></script><script src="/webpack-runtime-f05cf5b5a47a62f1c084.js" async=""></script></body></html>
