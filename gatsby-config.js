@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `crud`,
-    description: `Prototype your frontend with your backend.`,
+    title: `Prototype your frontend with your backend.`,
+    description: `Prototype faster by having crud create your basic CRUD backend. All you need to do is send over JSON - and crud will handle the rest.`,
     github: `@gedankenessen`,
     twitter: `@gedankenessen`,
     author: `gedankenessen`,
