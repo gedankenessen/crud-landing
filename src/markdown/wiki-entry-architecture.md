@@ -7,7 +7,7 @@ description: ""
 
 <h2 id="stack">Stack</h2>
 
-crud is written in [Clojure](https://clojure.org/), a functional and dynamically typed language. It was choosen because of its philosophy around data manipulation (highlights: dynamic typing, simple data structures, nil-pruning) and its great developer experience.
+crud is written in [Clojure](https://clojure.org/), a functional and dynamically typed language. It was choosen because of its philosophy around data manipulation (highlights: dynamic typing, simple data structures, nil-punning) and its great developer experience.
 
 <br/>
 
@@ -62,7 +62,7 @@ crud has the usual layers of a Web API:
 
 <h2 id="data-and-errors">Data and errors</h2>
 
-To take advantage of Clojure's nil-pruning and the REPL-driven development everything returned by each layer is in form of a `[data error]` tuple. This both encapsulates the error- and succes-case. If an error occurs `data` will be `nil` and a `:message` key will be present inside of `error`. If the action was sucessful `error` will be `nil`.
+To take advantage of Clojure's nil-punning and the REPL-driven development everything returned by each layer is in form of a `[data error]` tuple. This both encapsulates the error- and succes-case. If an error occurs `data` will be `nil` and a `:message` key will be present inside of `error`. If the action was sucessful `error` will be `nil`.
 
 <br/>
 

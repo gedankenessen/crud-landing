@@ -20,7 +20,7 @@ crud was a good opportunity to try out a new stack. I've been a fan of Clojure f
 
 <br/>
 
-Having a focus on basic datastructures allows for easy consumption of built-in functions and third-party libraries. I'm a big fan of the opt-in attitude towards static typing and coming with nil-pruning out-of-the-box, too. All of those factors make handling of data feel great. And the way the REPL empowers the developers is incredibly rewarding and lends itself to create very testable solutions.
+Having a focus on basic datastructures allows for easy consumption of built-in functions and third-party libraries. I'm a big fan of the opt-in attitude towards static typing and coming with nil-punning out-of-the-box, too. All of those factors make handling of data feel great. And the way the REPL empowers the developers is incredibly rewarding and lends itself to create very testable solutions.
 
 <br/>
 
